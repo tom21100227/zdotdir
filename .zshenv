@@ -22,3 +22,7 @@ path=(
   /usr/local/{,s}bin(N)
   $path
 )
+
+# Set default editor
+export EDITOR='nano'
+export VISUAL='nano'
