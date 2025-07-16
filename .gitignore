@@ -12,3 +12,8 @@
 *.zwc
 *.zwc.old
 ~*
+
+*.DS_Store*
+
+omz
+omz/*
