@@ -15,6 +15,11 @@ echo "Syncing dotfiles..."
 cd -- "$HOME/.dotfiles" && git pull --rebase && git push
 echo "---------------------------------"
 
+echo "Update `tldr`"
+tldr --update
+echo "Updated `tldr`"
+echo "---------------------------------"
+
 # Run brew upgrade
 echo "Running brew upgrade..."
 brew upgrade
