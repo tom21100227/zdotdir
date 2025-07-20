@@ -16,13 +16,13 @@ cd -- "$HOME/.dotfiles" && git pull --rebase && git push
 echo "---------------------------------"
 
 echo "Update `tldr`"
-tldr --update
+tldr --update --quiet
 echo "Updated `tldr`"
 echo "---------------------------------"
 
 # Run brew upgrade
 echo "Running brew upgrade..."
-brew upgrade
+brew upgrade --quiet
 echo "---------------------------------"
 
 # Update the timestamp file with the time passed from the parent script
