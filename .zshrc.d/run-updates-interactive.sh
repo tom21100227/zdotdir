@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+# Update the timestamp file with the time passed from the parent script
+if [[ -n "$1" ]]; then
+  echo "$1" > "$HOME/.config/zsh/.last-update"
+  echo "Timestamp updated."
+fi
+
 # This script runs the update tasks in an interactive terminal window.
 
 echo "Starting daily auto-update..."
@@ -49,11 +55,6 @@ echo "Running brew upgrade..."
 brew upgrade --quiet
 echo "---------------------------------"
 
-# Update the timestamp file with the time passed from the parent script
-if [[ -n "$1" ]]; then
-  echo "$1" > "$HOME/.config/zsh/.last-update"
-  echo "Timestamp updated."
-fi
 
 echo "---------------------------------"
 echo "Auto-update complete."
