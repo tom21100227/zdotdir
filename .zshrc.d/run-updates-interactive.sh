@@ -45,9 +45,9 @@ else
 fi
 echo "---------------------------------"
 
-echo "Update `tldr`"
+echo "Update tldr"
 tldr --update --quiet
-echo "Updated `tldr`"
+echo "Updated tldr"
 echo "---------------------------------"
 
 # Run brew upgrade
